@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: netbox-docker
+  description: Forked from https://github.com/netbox-community/netbox-docker
+  annotations:
+    github.com/project-slug: Bandwidth/netbox-docker
+  organization: BW
+  costCenter: Technology - Network Engineering
+  platformType: VM
+  buildPlatform: N/A
+spec:
+  type: Library
+  owner: github/band-systems-infrastructure
+  lifecycle: |
+    Prototype
+    dependsOn:
+        - resource:platform/VM
+        - resource:cost-center/Technology - Network Engineering
