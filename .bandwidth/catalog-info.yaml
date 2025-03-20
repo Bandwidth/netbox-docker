@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: netbox-docker-location
+  description: Links to additional entities in the netbox-docker repository.
+  annotations:
+    github.com/project-slug: Bandwidth/netbox-docker
+spec:
+  targets:
+    - ./component.yaml
